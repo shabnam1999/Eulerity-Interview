@@ -1,0 +1,12 @@
+{
+  "theme": {
+    "background_color": "#FFFFFF",
+    "text_color": "#111827"
+  },
+  "form_title": "Corrupt JSON Test",
+  "fields": [
+    {
+      "id": "unclosed_braces",
+      "order": 1,
+      "type": "TEXT"
+      // Missing brackets and unclosed elements

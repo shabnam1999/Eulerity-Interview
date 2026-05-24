@@ -1,0 +1,59 @@
+{
+  "theme": {
+    "background_color": "#F3F4F6",
+    "text_color": "#1F2937",
+    "border_color": "#9CA3AF",
+    "error_color": "#DC2626"
+  },
+  "form_title": "Defensive Verification",
+  "fields": [
+    {
+      "id": "unknown_component_id",
+      "order": 1,
+      "type": "SUPER_CUSTOM_UNKNOWN_FIELD",
+      "label": "This should be completely ignored"
+    },
+    {
+      "id": "text_invalid_max_length",
+      "order": 2,
+      "type": "TEXT",
+      "subtype": "PLAIN",
+      "label": "Text with negative max length",
+      "max_length": -10,
+      "placeholder": "Should fall back to default limit",
+      "required": false
+    },
+    {
+      "id": "dropdown_no_options",
+      "order": 3,
+      "type": "DROPDOWN",
+      "label": "Disabled Dropdown (No Options)",
+      "required": true
+    },
+    {
+      "id": "missing_label_checkbox",
+      "order": 4,
+      "type": "CHECKBOX",
+      "required": true
+    },
+    {
+      "id": "email_regex_field",
+      "order": 5,
+      "type": "TEXT",
+      "subtype": "PLAIN",
+      "label": "Email Address (Regex check)",
+      "placeholder": "enter your email",
+      "regex": "^[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}$",
+      "error_message": "Please enter a valid email address.",
+      "required": true
+    },
+    {
+      "id": "notification_toggle",
+      "order": 6,
+      "type": "TOGGLE",
+      "label": "Enable Notifications",
+      "required": false,
+      "default_value": true
+    }
+  ]
+}
